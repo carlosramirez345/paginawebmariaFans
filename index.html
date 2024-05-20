@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Registro</title>
+    <title>Página de Registro</title><!--titulo de la pagina-->
     <style>
         *{
             font-family: 'Poppins', sans-serif;
+            /*especifica una lista de fuentes*/
         }
        body{
         background-image: url("https://mariabecerraoficial.com/wp-content/uploads/2024/04/15.jpg");
@@ -14,18 +15,21 @@
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
+           /*con estos background podemos poner como fondo del cuerpo una imagen*/
        }
        .box{
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 90vh;
+           /*esto nos permitira controlar donde se va a ver el elemento en la pantalla*/
        }
        .container{
         width: 350px;
         display: flex;
         flex-direction: column;
         padding: 0 15px 0 15px;
+           /*esto nos permitira darle una forma al contenedor donde se escribira la informacion*/
        }
        span{
         color: #fff;
@@ -40,11 +44,13 @@
         display: flex;
         justify-content: center;
         padding: 0 0 15px 0;
+           /*es la parte superior del sitio web*/
        }
        .input-field{
         display: flex;
         flex-direction: column;
         margin-bottom: 15px;
+           /*esto nos permitira hacer que el texto sea editable*/
        }
        .input-field .input{
         height: 45px;
@@ -61,9 +67,11 @@
         top: -31px;
         left: 17px;
         color: #fff;
+           /*con esto nos dara la posicion de la casilla*/
        }
        ::-webkit-input-placeholder{
         color: #fff;
+           /*esto nos permitira agregar un color al texto que aparece dentro de las casillas antes de que se escriba en ellas*/
        }
        .submit{
         border: none;
@@ -75,9 +83,11 @@
         background: rgba(255, 255, 255, 0.7);
         cursor: pointer;
         transition: .3s;
+           /*esto nos permitira editar el boton */
        }
        .submit:hover{
         box-shadow: 1px 5px 7px 1px rgba(0,0, 0, 0.2);
+           /*esto nos pormetira agregar un efecto de sombra al pasar el cursor sobre el boton*/
        }
        .bottom{
         display: flex;
@@ -86,27 +96,32 @@
         font-size: small;
         color: #fff;
         margin-top: 10px;
+           /*nos permite darle firmato al texto que se encuentra dentro del boton*/
        }
        .left{
         display: flex;
+           /*el texto se representara de lado izquierdo*/
        }
        label a{
         color: #fff;
         text-decoration: none;
+           /*nos permite editar el texto*/
        }
     </style>
     
 </head>
 <body>
-    <form method="post" action="procesar_registro.html" >
+    <form method="post" action="procesar_registro.html" ><!--esto nos permitira dirigirnos a la siguiente pagina-->
         <div class="box">
             <div class="container">
             <div class="top-header">
                 <span>Maria Becerra </span>
-                <header>Iniciar sesion</header>       
+                <!-- texto que aparece en la parte superior-->
+                <header>Iniciar sesion</header>   
+                <!--encabezado de la pagina-->
             </div>
             <div class="input-field">
-                <input type="text" class="input" placeholder="usuario" required>
+                <input type="text" class="input" placeholder="usuario" required><!--hace que sea posible escribir en las casillas-->
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
@@ -119,6 +134,7 @@
             <div class="bottom">
                 <div class="left">
                     <input type="checkbox" id="check">
+                    <!--crea una casilla-->
                     <label for="check">recordarme</label>
                 </div>
                 <div class="right">
@@ -128,12 +144,4 @@
             </div></div>
     </form>
 </body>
-<script>
-    
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'https://bqlmismlfdqupjmzdhct.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
-</script>
 </html>
