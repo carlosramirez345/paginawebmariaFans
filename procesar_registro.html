@@ -6,17 +6,20 @@
     <style>
         html{
             background-color: #000000;
+            /*le da un color al fondo de la pagina*/
         }
        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+           /*agrega un tipo de letra al texto del body*/
         }
         header {
             background-color: #000000;
             color: #ffffff;
             text-align: center;
             padding: 10px 0;
+            /*le agrega un fondo al encabezado al igual un color y una posicion*/
         }
         ul {
            list-style-type: none;
@@ -24,9 +27,11 @@
            padding: 0;
            overflow: hidden;
            background-color: #ccc;
+            /*esto hace que no se muestre ningun tipo de marcador en la lista*/
         }
         li{
             float: left;
+            /*ubica el elemento al lado izquierdo del contenedor*/
         }
         li a{
             display: block;
@@ -34,11 +39,11 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            /*nos permite ver donde se va a ver cada elemento al igual dandole un color y una alineacion*/
         }
         li a:hover{
             background-color: #111;
-        
-
+        /*al pasar el puntero por el elemnto cabiara de color*/
         }
         form {
             max-width: 300px;
@@ -46,14 +51,7 @@
             padding: 20px;
             border: 1px solid #ffacac;
             border-radius: 5px;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="submit"] {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 5px;
+            <!--se dara el ancho maximo del elemnto haci como el margen, el espacio del alrededor, y un borde-->
         }
         .mensaje{
             display: block;
@@ -64,6 +62,7 @@
             background-color: rgb(255, 243, 243);
             color: #ccc;
             cursor: pointer;
+            /*le daremos una posicion al mensaje en pantalla, justificando el contenido, dandole un color y verificando si tiene un dispositivo con puntero*/
         }
         img.izquierda{
             float: left;
@@ -72,6 +71,7 @@
             margin-top: 35px;
             margin-bottom: 20px;
             margin-right: 20px;
+            /*alineacion de la imagen, dandole un margen y una posicion*/
         }
         p{
             -webkit-text-stroke-width: 1px;
@@ -81,17 +81,20 @@
             color: bisque;
             font-family: Arial, sans-serif;
             font-size: larger;
+            /*edicion del texto danodole un tipo de letra y un color*/
         }
         h1{
             background-image: url("https://mariabecerraoficial.com/wp-content/uploads/2024/04/15.jpg" );
             background-repeat: no-repeat;
             background-size: cover;
+            /*dandole un fondo al encabezado */
         }
     </style>
      <script>
         window.addEventListener('DOMContentLoaded',(event)=>{
             letmensaje=document.getElementById('mensaje'),
             mensaje.addEventListener('click',()=>{mensaje.style.display='none';
+          <!-- esto permite que se pueda eliminar el mensaje de registro exitoso -->                                
             })
         });
     </script>
@@ -105,13 +108,14 @@
         <center>
        <li><a href="index.html">Inicio</a></li> <li><a href="streaming.html">streaming </a></li> <li><a href="videos.html">multimedia </a></li>  <li><a href="https://merch.mariabecerraoficial.com/">merch</a></li><li><a href="https://www.instagram.com/mariabecerra/?hl=es">instagram</a></li><li><a href="https://twitter.com/MariaBecerra22">x</a></li>
        <li><a href="https://www.youtube.com/channel/UCEcb76oxfjpX5eGysQCHvcA">Youtube</a></li><li><a href="https://music.apple.com/mx/artist/maria-becerra/395643318">apple music</a></li><li><a href="https://open.spotify.com/intl-es/artist/1DxLCyH42yaHKGK3cl5bvG?_authfailed=1">Spotify</a></li>
+        <!-- estas ligas permiten que al darle click al texto te dirigira a la pagina de acuerdo al enlace-->
         </center>
     </ul>
     <center>
     <div id="mensaje" class="mensaje" >
         Registro exitoso. haz click para ocultar
-    </div><br>
-    <img  src="https://media.gettyimages.com/id/1797345563/es/foto/seville-spain-maria-becerra-attends-the-24th-annual-latin-grammy-awards-at-fibes-conference.jpg?s=612x612&w=gi&k=20&c=i-YnIg1zDZT-T-J9LlbOqmuWGpo9LReL-DTKxWq3TLI=" width="300" height="500" class="izquierda">
+    </div><br><!--muestra el mesaje-->
+    <img  src="https://media.gettyimages.com/id/1797345563/es/foto/seville-spain-maria-becerra-attends-the-24th-annual-latin-grammy-awards-at-fibes-conference.jpg?s=612x612&w=gi&k=20&c=i-YnIg1zDZT-T-J9LlbOqmuWGpo9LReL-DTKxWq3TLI=" width="300" height="500" class="izquierda"> <!--agrega una imagen y le da un  tamaño-->
 </center>
 <p>
     Maria Becerra cuenta con más de 23 millones de oyentes mensuales en Spotify,  en su canal oficial de Youtube más de 5 millones de suscriptores, y más de 12 mil millones de visitas entre todos sus videoclips. 
@@ -128,6 +132,6 @@ El 2022 lanza el álbum “LA NENA DE ARGENTINA” que cuenta con 13 canciones s
 
 Su primer álbum, ANIMAL, tiene más de 1500 millones de reproducciones en las plataformas Spotify y Youtube. Los videoclips “ANIMAL”, “ACARAMELAO”, “MI DEBILIDAD” y “WOW WOW” tienen más de 200 millones de visitas cada uno.
 </p>
-
+<!--agrega el texto-->
 </body>
 </html>
